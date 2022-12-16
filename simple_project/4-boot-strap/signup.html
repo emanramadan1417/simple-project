@@ -1,0 +1,72 @@
+    <!doctype html>
+<html>
+  <head>
+    <title>Sign Up</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+   <div class="page-heading">
+      <div class="main-title">
+        My Basic Blog
+      </div>
+     
+     <div class="login-area">
+        <a class="login-link" href="index.html">Home</a>
+        <a class="login-link" href="newpost.html">New Post</a>
+        <a class="login-link" href="login.html">Login</a>
+        <a class="login-link" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+    <div class="page-content">
+      <div style="padding-left : 120px;">
+        <h2>Signup</h2>
+        <form id="signupFormValidate">
+            <label>
+              <div>User Name</div>
+              <input id="signupName" type="text" name="username" value="">
+            </label>
+            <div id="nameError" class="error"></div>
+      
+            <label>
+              <div>Password</div>
+              <input id="signupPw" type="password" name="password" value="">
+            </label>
+            <div id="passError" class="error"></div>
+            
+            <label>
+              <div>Verify Password</div>
+              <input id="signupVerify" type="password" name="verify" value="">
+            </label>
+            <div id="verfyError" class="error"></div>
+
+            <label>
+              <div>Email</div>
+              <input id="signupMail" type="text" name="email" value="">
+            </label>
+            <div id="mailError" class="error"></div>
+
+          <label>
+            <input type="submit">
+          </label>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+    

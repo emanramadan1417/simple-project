@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>New Post</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu">
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Basic Blog</a>
+        </div>
+        <div id="navbar-collapse-menu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="login-link" href="index.html">Home</a></li>
+            <li><a class="login-link" href="newpost.html">New Post</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="login-link" href="login.html">Login</a></li>
+            <li><a class="login-link" href="signup.html">Sign Up</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 align="center">My Basic Blog</h1>
+            <p align="center"> This is our first blog using bootsrap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='page-content'>
+      <div style="padding-left: 120px;">
+        <h2>New Post</h2>
+        <form id="postFormValidate">
+          <label>
+            <div>subject</div>
+            <input id="subject" type="text" name="subject" value="">
+          </label>
+
+          <label>
+            <div>blog</div>
+            <textarea id="content" name="content"></textarea>
+          </label>         
+
+          <label>
+            <input id="postSubmit" type="submit">
+          </label>
+
+          <label>
+            <div id="postFeedback"></div>
+          </label>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

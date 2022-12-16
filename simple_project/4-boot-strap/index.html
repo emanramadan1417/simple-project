@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+ 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    
+  </head>
+
+  <body>
+
+  	<div id="loginModal" class="modal fade" tabindex="-1">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        			<h4 class="modal-title">Login</h4>
+      			</div>
+      			<div class="modal-body">
+        			<form id="loginFormValidate" class="form-horizontal">
+  						<div id="loginNameGroup" class="form-group">
+    						<label for="loginName" class="col-sm-3 col-sm-offset-1 control-label">User Name
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="text" class="form-control" id="loginName" placeholder="Email">
+    						</div>
+  						</div>
+  						<div id="loginPassGroup" class="form-group">
+    						<label for="loginPw" class="col-sm-3 col-sm-offset-1 control-label">Password
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="password" class="form-control" id="loginPw" placeholder="Password">
+    						</div>
+  						</div>
+						 <div class="form-group">
+						    <div class="col-sm-offset-4 col-sm-7">
+						      <button type="submit" class="btn btn-primary">Sign Up</button>
+						      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						    </div>
+						  </div>
+					</form> 
+     			</div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+	<div id="signupModal" class="modal fade" tabindex="-1">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        			<h4 class="modal-title">Sign Up</h4>
+      			</div>
+      			<div class="modal-body">
+        			<form id="signupFormValidate" class="form-horizontal">
+  						<div class="form-group">
+    						<label for="signupName" class="col-sm-3 col-sm-offset-1 control-label">User Name
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="text" class="form-control" id="signupName" placeholder="username">
+    						</div>
+  						</div>
+  						<div class="form-group">
+    						<label for="signupPw" class="col-sm-3 col-sm-offset-1 control-label">Password
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="password" class="form-control" id="signupPw" placeholder="Password">
+    						</div>
+  						</div>
+  						<div class="form-group">
+    						<label for="signupVerify" class="col-sm-3 col-sm-offset-1 control-label">Verify Password
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="password" class="form-control" id="signupVerify" placeholder="Password">
+    						</div>
+  						</div>
+  						<div class="form-group">
+    						<label for="signupMail" class="col-sm-3 col-sm-offset-1 control-label">Email
+    						</label>
+    						<div class="col-sm-7">
+      							<input type="email" class="form-control" id="signupMail" placeholder="Email">
+    						</div>
+  						</div>
+						 <div class="form-group">
+						    <div class="col-sm-offset-4 col-sm-7">
+						      <button type="submit" class="btn btn-primary">Sign Up</button>
+						      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						    </div>
+						  </div>
+					</form> 
+     			</div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container" >
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu">
+  					<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="index.html">Basic Blog</a>
+  			</div>
+  			<div id="navbar-collapse-menu" class="collapse navbar-collapse">
+  				<ul class="nav navbar-nav">
+  					<li><a class="login-link" href="index.html">Home</a></li>
+	    			<li><a class="login-link" href="#postFormValidate">New Post</a></li>
+  				</ul>
+
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a class="login-link" data-toggle="modal" data-target="#loginModal">Login</a></li>
+  					<li><a class="login-link" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+  				</ul>
+
+  			</div>
+  		</div>
+  	</nav>
+
+  	<div class="container">	
+  		<div class="jumbotron">
+  			<div class="row">
+	  			<div class="col-sm-12">
+	  				<h1 align="center">My Basic Blog</h1>
+	  				<p align="center"> This is our first blog using bootsrap</p>
+	  			</div>
+	  		</div>
+  		</div>
+  	</div>
+  	
+  	<div class="container">
+  		
+      <div class="row row-content">
+  			<div class="col-xm-12 col-sm-10 col-sm-offset-1">
+  				<div class="newpost">
+	  				<h2>New Post</h2>
+	  				<form id="postFormValidate" class="form">
+	  					<div id="postSubjectGroup" class="form-group">
+	  						<input id="subject" name="subject" class="form-control" type="text" placeholder="Subject">		
+	  					</div>
+	  					<div id="postContentGroup" class="form-group">
+	  						<textarea id="content" name="content" class="form-control" type="text" placeholder="Content" rows="8"></textarea>
+	  					</div>
+
+	  					<button type="submit" class="btn btn-primary">Post</button>
+	  				</form>
+	  			</div>
+   			</div>
+  		</div>
+
+      <div class="row row-content">
+        <div id="postslist" class="col-xm-12 col-sm-10 col-sm-offset-1">
+          
+          <div class="post">
+            <h2>Bla Bla Bla <small> 12-12-2012</small> </h2>
+            <div style="margin-top: 20px;"></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Basic panel example
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                  <a type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <span class="badge">42</span>
+                  </a>
+                  <a type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                    <span class="badge">42</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+  	
+    </div>
+
+    
+ <!--   <div id="postslist" class="page-content">
+	</div> -->
+  
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 	  <script type="text/javascript" src="js/db.js"></script>
+ 	  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
